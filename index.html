@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deanna's Teaching Portfolio - Home</title>
+    <title>Deanna's Teaching Portfolio - Projects</title>
 </head>
     <!-- background colour added -->
     <body style="background-color: #FFE79F;">
@@ -11,20 +11,48 @@
 <body>
   <!-- This is my header section for my page, in line with Semantic HTML-->
   <header>
-    <h1 style="color:#A10060; font-family: Georgia, serif;font-size:xx-large">My Teaching Portfolio - Deanna Khoury</h1>
+    <h1 style="color:#A10060; font-family: Georgia, serif;font-size:xx-large">Deanna's Teaching Portfolio Website</h1>
   </header>
-  <!--Navigation Menu Section-->
-  <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="teaching.html">Teaching Practice</a></li>
-        <li><a href="projects.html">Project Showcase</a></li>
-        <li><a href="worksamples.html">Samples of Work</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-    </ul>
-  </nav>
+<!-- This is the Navigation Section of my Website -->
+    <style>
+        .nav-container {
+        display: flex;
+        justify-content: center; 
+        gap: 10px; 
+        background-color: #A10060;
+        padding: 10px;
+        }
+
+        .nav-btn {
+        background-color: #ebb4d5;
+        color: #A10060;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .nav-btn:hover {
+        background-color: #f1f1f1;
+        transform: scale(1.05);
+        }
+
+        .nav-btn:active {
+        background-color: #ddd;
+        }
+    </style>
+
+<nav class="nav-container">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="teaching.html" class="nav-btn">Teaching Practice</a>
+    <a href="projects.html" class="nav-btn">Project Showcase</a>
+    <a href="worksamples.html" class="nav-btn">Samples of Work</a>
+    <a href="resume.html" class="nav-btn">Resume</a>
+    <a href="contact.html" class="nav-btn">Contact Me</a>
+</nav>
   <!-- This is the main section of my website, in line with Semantic HTML-->
   <main>
     <!-- This is the section for my profile picture-->
