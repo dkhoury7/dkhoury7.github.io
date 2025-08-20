@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deanna's Teaching Portfolio - Projects</title>
-</head>
+    <link rel="stylesheet" href="style.css">
     <!-- background colour added -->
     <body style="background-color: #FFE79F;">
 </head>
@@ -14,36 +14,6 @@
     <h1 style="color:#A10060; font-family: Georgia, serif;font-size:xx-large">Deanna's Teaching Portfolio Website</h1>
   </header>
 <!-- This is the Navigation Section of my Website -->
-    <style>
-        .nav-container {
-        display: flex;
-        justify-content: center; 
-        gap: 10px; 
-        background-color: #A10060;
-        padding: 10px;
-        }
-
-        .nav-btn {
-        background-color: #ebb4d5;
-        color: #A10060;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-family: Georgia, serif;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        .nav-btn:hover {
-        background-color: #f1f1f1;
-        transform: scale(1.05);
-        }
-
-        .nav-btn:active {
-        background-color: #ddd;
-        }
-    </style>
-
 <nav class="nav-container">
     <a href="index.html" class="nav-btn">Home</a>
     <a href="about.html" class="nav-btn">About</a>
@@ -53,13 +23,57 @@
     <a href="resume.html" class="nav-btn">Resume</a>
     <a href="contact.html" class="nav-btn">Contact Me</a>
 </nav>
+<!-- This is the heading for this current page-->
+<header>
+    <h2 style="color:#A10060; font-family: Georgia, serif, Bold; font-size:x-large">Projects</h2>
+</header>
 
- <!-- This is the heading for this current page-->
-  <header>
-     <h2 style="color:#A10060; font-family: Georgia, serif, Bold; font-size:x-large">Projects</h2>
-  </header>
-  <!-- This is the main section of my page-->
-  <main>
+<!-- This is the main section of my page-->
+<main>
+    <!-- this section focuses on showcasing the projects i have made using flexbox format-->
+    <section>
+        <style>
+        </style>
 
-  </main>
+        <div class="flex container">
+            <div class="project-card">
+                <img src="images/dog-lamp.png" alt="Photo of Dg Lamp made from Walnut and Recycled materials">
+                <h3>Product Design 2024</h3> 
+                <p>Completed during second year of university in which we were given the freedom to design and produce a lamp.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="images/heirloom-box.png" alt="Photo of heirloom box with wavey veneer">
+                <h3>Industrial Technology - Timber Unit 2024 </h3> 
+                <p>Completed during second year of universiy within a course to develop woodworking skills.</p>
+            </div>
+        
+            <div class="project-card">
+                <img src="images/serving-board.ong.png" alt="Photo of serving board with makers mark 'Crafted with love by Deanna' with flower detailing">
+                <h3>Industrial Technology - Timber Unit 2024</h3> 
+                <p>Completed during second year of universiy within a course to develop woodworking skills.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="images/pet-feeder.png" alt="Photo of pet feeder with 3D printed and laser cut components, 'Yum Yum' sign">
+                <h3>Electromechanical Technologies Unit 2024</h3> 
+                <p>Completed during second year of universiy within a course to develop the skills and understanding of electromechanical components and relationships.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="images/phone-safe.png" alt="Photo of wooden phone safe with acyrlic, flower patterned lid">
+                <h3>Product Design 2024 </h3> 
+                <p>Completed during second year of universiy within a product design course. the aim was to develop a solution to protect students' phones whilst in their school bags as the 'No phones during school' policy came into place across all NSW Public Schools.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- this is the footer section of my page, in line with Semantic HTML-->
+<footer> 
+    <div class="'container">
+        <p> &copy; 2025 Deanna Khoury. All rights reserved.</p>
+    </div>
+</footer>
     
