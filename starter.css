@@ -152,7 +152,7 @@ nav a {
 .section {
   background: var(--surface);           /* Light background for section */
   border-radius: var(--radius);         /* Rounded corners */
-  padding: calc(var(--spacing) * 1.25); /* Internal spacing */
+  padding: calc(var(--spacing) * 2.25); /* Internal spacing */
   margin: 18px 0;                       /* Vertical spacing */
   box-shadow: var(--shadow);            /* Subtle shadow */
 }
@@ -177,7 +177,13 @@ nav a {
   height: auto;           /* Maintains aspect ratio */
   padding-bottom: 25px;   /* Space below image so text isnâ€™t too close */
 }
-.infographic, .sample-photo { 
+.daily-reminder {
+    max-width: 300px;       /* resizes maximum width of these images within the sections */
+  width: 100%;            /* keeps proportions and maintains responsiveness */
+  height: auto;           /* Maintains aspect ratio */
+  padding-bottom: 25px;   /* Space below image so text isn’t too close */
+}
+.infographic, .project-photo { 
   max-width: 560px;       /* resizes maximum width of these images within the sections */
   width: 100%;            /* keeps proportions and maintains responsiveness */
   height: auto;           /* Maintains aspect ratio */
@@ -199,6 +205,9 @@ td {
 }
 thead {
   background-color: #A10060; /* Deep pink header background */
+  color:#ffffff; 
+  font-family: Georgia, serif, Bold;
+  font-size:medium"
 }
 th {
   color:#ddd;              /* White header text */
@@ -215,6 +224,38 @@ tr:nth-child(even) {
 tbody tr {
 background-color: #ebb4d5;
 } /* Table cell background colour */
+ 
+.flex-container {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+
+.project-card {
+    flex: 1 1 50px;
+    background-color: #ebb4d5;
+    border: 3px solid #dc80b7;
+    padding: 15px;
+    border-radius: 9px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #A10060;
+}
+
+.card a { display: block; }
+.card:hover { transform: translateY(-2px); transition: transform .15s ease; }
 
 /* ---------- 8) Cards / Gallery ------------- */
 .card-grid {
@@ -222,36 +263,6 @@ background-color: #ebb4d5;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));    /* Responsive columns */
   gap: var(--spacing);                                            /* Space between grid items */
 }
-        .flex-container {
-        display: flex;
-        flex-wrap:wrap;
-        gap: 20px;
-        justify-content: space-between;
-        margin-top: 20px;
-        }
-
-        .project-card {
-        flex: 1 1 10px;
-        background-color: #ebb4d5;
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .project-card img {
-        width: 200px;
-        height: 200px;
-        border-radius: 4px;
-        }
-
-        .project-card h3 {
-        margin-top: 10px;
-        font-size: 1.1rem;
-        color: #A10060;
-        }
-        .card a { display: block; }
-        .card:hover { transform: translateY(-2px); transition: transform .15s ease; }
 
 
 /* ---------- 9) Forms ----------------------- */
